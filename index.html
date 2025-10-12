@@ -1,8 +1,140 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我12312</p>
-
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>您的姓名 - 个人学术主页</title>
+    <!-- 引入MathJax以渲染LaTeX数学公式 -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        
+        /* 头部样式 */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+        }
+        
+        /* 内容区块样式 */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #bdc3c7;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>您的姓名</h1>
+            <p class="title">基础数学博士生 - [您的大学/研究机构]</p>
+            <div class="contact-info">
+                <p>邮箱: your.email@university.edu | 
+                   个人简介: <a href="[您的简历链接]">PDF简历</a> | 
+                   GitHub: <a href="[您的GitHub主页]">@yourusername</a></p>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2>个人简介</h2>
+            <p>在这里简要介绍您的教育背景和研究兴趣。例如：我是[大学名称]基础数学方向的博士生，导师是[导师姓名]。我的研究方向主要集中在[具体领域，如泛函分析、代数几何、偏微分方程等]。</p>
+        </section>
+        
+        <section class="section">
+            <h2>研究方向</h2>
+            <p>详细介绍您的研究方向和兴趣。可以在这里嵌入数学公式，例如：我的工作主要研究 \( \nabla \cdot (A(x)\nabla u) = 0 \) 的椭圆型方程正则性理论...</p>
+            <p>另一个研究方向：设 \( X \) 是光滑射影簇，我研究其上的 \( K \)-稳定性与几何不变量理论的关系...</p>
+        </section>
+        
+        <section class="section">
+            <h2>已发表论文</h2>
+            <ul>
+                <li>论文标题1. <em>期刊名称</em>, 年份. [<a href="#">预印本链接</a>]</li>
+                <li>论文标题2. <em>期刊名称</em>, 年份. [<a href="#">预印本链接</a>]</li>
+                <li>正在进行的项目：简要描述正在进行的研究工作</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>教学经历</h2>
+            <ul>
+                <li>学期，课程名称，[助教/主讲教师]，大学名称</li>
+                <li>学期，课程名称，[助教/主讲教师]，大学名称</li>
+            </ul>
+        </section>
+        
+        <footer>
+            <p>© 2025 您的姓名. 最后更新: <span id="currentDate"></span></p>
+        </footer>
+    </div>
+    
+    <script>
+        // 自动更新当前日期
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString('zh-CN');
+    </script>
+</body>
+</html>
